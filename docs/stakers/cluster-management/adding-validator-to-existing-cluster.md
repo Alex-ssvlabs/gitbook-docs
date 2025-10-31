@@ -1,75 +1,140 @@
 ---
-title: Adding validator to existing cluster
+title: Add More Validators
 sidebar_position: 1
 ---
 
-# Adding validator to existing cluster
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-### Connect your Web3 wallet to the WebApp
+# Add Validator to Existing Cluster
 
-Make sure to connect your Web3 wallet with the WebApp, and that the address corresponds with the one you want to manage your Validators with.
+Make sure to connect your Web3 address/wallet with the WebApp. Use the address you registered your validators with.
 
-:::info
-**Note:** Your account is associated with your Web3 wallet.
-:::
+<Tabs>
+  <TabItem value="detailed-guide" label="Detailed Guide">
 
-In the My Account page, select an active cluster and then click on the "+ Add Validator" button.
+1. [**In the Clusters page**](https://app.ssv.network/clusters), **select an active cluster** and then click on the "**+ Add Validator**" button.
 
-![add-validator-to-cluster](/img/add-validator-to-cluster-1.avif)   
+![add-validator-to-cluster](/img/add-validator-to-cluster-1.avif)
 
-You'll be asked how do you want to handle operational costs, in regards to your existing cluster balance.
+2. You'll be asked how do you want to **handle operational costs**, in regards to your existing cluster balance.
 
 ![add-validator-to-cluster](/img/add-validator-to-cluster-2.webp)
 
-### Key splitting
+3. **Generate KeyShares** via SSV Keys CLI command or other means. If unsure, refer to [this step-by-step guide](/stakers/validator-onboarding/split-keys.md).
 
-The next screen will allow you to generate KeyShares for your validator key. On testnet, this can be done Online, directly on the WebApp, or Offline, on your computer.
+![add-validator-to-cluster](/img/add-validator-to-cluster-6.avif)
 
-On mainnet, only the Offline option is available.
+<details>
+
+<summary>Key Splitting on Testnet</summary>
+
+On Testnet, this can be done Online, directly on the WebApp, or Offline on your computer.
 
 ![add-validator-to-cluster](/img/add-validator-to-cluster-3.avif)
-#### Online Key Splitting
 
-Online key splitting presents a convenient option, especially for those not familiar with the console, or command line clients.
+:::warning Online Splitting
+**Online splitting is not considered safe** and is only available on testnet for testing purposes.
 
-This is not considered safe and is only available on testnet for testing purposes.
-
-:::warning
 Please never perform a Online key splitting on testnet, with a private key that you intend to use on mainnet.
 :::
-
-![add-validator-to-cluster](/img/add-validator-to-cluster-4.avif)
 
 If the Online option is chosen, the next screen allows you to upload the Validator key (file named keystore) and enter the password to decrypt it.
 
 ![add-validator-to-cluster](/img/add-validator-to-cluster-5.avif)
-#### Offline Key Splitting
 
-Offline key splitting is the most secure option, although less convenient, as it requires running a command line tool. For more information, refer to the specific [User Guide on how to use the ssv-keys CLI tool](../tools/ssv-keys-cli.md).
+</details>
 
-![add-validator-to-cluster](/img/add-validator-to-cluster-6.avif)
 
-If the Offline option was selected, please follow the indications and upload the generated `keyshares-[DATE]-[TIME].json` file in the following screen.
+4. **Upload the generated `keyshares-[DATE]-[TIME].json` file**.
 
 ![add-validator-to-cluster](/img/add-validator-to-cluster-7.avif)
 
-Once uploaded, if successfully validated, advance to the next screen clicking Next.
+5. **If the upload is successful click on "Next".**
+
+   If you see an error such as "Keyshares are invalid", most often it is caused by incorrect nonce. Try to generate KeyShares once again, refer to [this step-by-step guide](/stakers/validator-onboarding/split-keys.md).
 
 ![add-validator-to-cluster](/img/add-validator-to-cluster-8.avif)
 
-### Slashing warning
-
-The following screen alerts you of the potential dangers of registering a validator on the SSV network, if the same set of validator keys is also being used by other consensus and validator clients.
-
-Please make sure to stop any other running validator setup, if you have any.
+6. The following screen is a **Slashing warning**, [explained in details here](#slashing-warning).
 
 ![add-validator-to-cluster](/img/add-validator-to-cluster-9.avif)
 
-### Validator summary
-
-The next screen presents a summary of your validator setup.
+7. The next screen presents a summary of your validator setup. Confirm everything is correct and click on "Register Validator".   
+More [details about the summary are here](#validator-summary).
 
 ![add-validator-to-cluster](/img/add-validator-to-cluster-10.avif)
+
+8. Finalize the validator registration by signing the transaction and adding SSV tokens to your account balance.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img 
+    src="/img/add-validator-to-cluster-12.png" 
+    alt="Distribute a validator" 
+    style={{ width: '30%', maxWidth: '500px' }}
+  />
+</div>
+
+9. Once the transaction has been signed and confirmed by the network, you'll be presented with the summary screen.
+**Congratulations! You're all set!🥳**
+
+![add-validator-to-cluster](/img/add-validator-to-cluster-14.avif)
+
+  </TabItem>
+  <TabItem value="checklist" label="Checklist">
+
+1. [**In the Clusters page**](https://app.ssv.network/clusters), **select an active cluster** and then click on the **"+ Add Validator"** button.
+
+2. You'll be asked how do you want to **handle operational costs**, in regards to your existing cluster balance.
+
+3. **Generate KeyShares** via SSV Keys CLI command or other means. If unsure, refer to [this step-by-step guide](/stakers/validator-onboarding/split-keys.md).
+
+<details>
+
+<summary>Key Splitting on Testnet</summary>
+
+On Testnet, this can be done Online, directly on the WebApp, or Offline on your computer.
+
+![add-validator-to-cluster](/img/add-validator-to-cluster-3.avif)
+
+:::warning Online Splitting
+**Online splitting is not considered safe** and is only available on testnet for testing purposes.
+
+Please never perform a Online key splitting on testnet, with a private key that you intend to use on mainnet.
+:::
+
+If the Online option is chosen, the next screen allows you to upload the Validator key (file named keystore) and enter the password to decrypt it.
+
+![add-validator-to-cluster](/img/add-validator-to-cluster-5.avif)
+
+</details>
+
+4. **Upload the generated `keyshares-[DATE]-[TIME].json` file**.
+
+5. **If the upload is successful click on "Next"**.
+
+   If you see an error such as "Keyshares are invalid", most often it is caused by incorrect nonce. Try to generate KeyShares once again, refer to [this step-by-step guide](/stakers/validator-onboarding/split-keys.md).
+
+6. The following screen is a **Slashing warning**, [explained in details here](#slashing-warning).
+
+7. The next screen presents a **summary of your validator setup**. Confirm everything is correct and click on "Register Validator".   
+More [details about the summary are here](#validator-summary).
+
+8. **Finalize the validator registration by signing the transaction** and adding SSV tokens to your account balance.
+
+9. Once the transaction has been signed and confirmed by the network, you'll be presented with the summary screen.
+**Congratulations! You're all set!🥳**
+
+  </TabItem>
+</Tabs>
+
+### Slashing warning
+
+The warning alerts you of the potential dangers of registering a validator on the SSV network. If the same set of validator keys is also being used by other consensus and validator clients your validators can be slashed.
+
+**Please make sure to stop any other running validator setup**, if you have any. 
+
+### Validator summary
 
 By clicking on Register validator, you'll be proposed to sign transactions to confirm your choice and transfer the SSV balance necessary to cover for the operational costs.
 
@@ -77,27 +142,4 @@ By clicking on Register validator, you'll be proposed to sign transactions to co
 **Note:** If this is the first time you are registering a validator to ssv.network, you will be required to make two transactions - one to approve the SSV smart contract and another one to register the validator.
 :::
 
-![add-validator-to-cluster](/img/add-validator-to-cluster-11.webp)
-
-### SSV Balance deposit
-
-Now, finalize the validator registration by signing the transaction and adding SSV tokens to your account balance.
-
-
-<div style={{ display: 'flex', justifyContent: 'center' }}>
-  <img 
-    src="/img/add-validator-to-cluster-12.png" 
-    alt="Distribute a validator" 
-    style={{ width: '50%', maxWidth: '500px' }}
-  />
-</div>
-
-You will need to confirm the transaction in your web3 wallet.
-
-![add-validator-to-cluster](/img/add-validator-to-cluster-13.avif)
-
-Once the transaction has been signed and confirmed by the network, you'll be presented with the summary screen.
-
-![add-validator-to-cluster](/img/add-validator-to-cluster-14.avif)
-
-**Congratulations! You're all set!🥳**
+![add-validator-to-cluster](/img/add-validator-to-cluster-10.avif)
