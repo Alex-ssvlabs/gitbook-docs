@@ -16,7 +16,7 @@ This procedure will set the fee recipient address for block proposal rewards **f
 
 Fee Recipient is an address that receives execution layer rewards. The default Fee Recipient for all validators in a given account the owner address. This page explains how to change this.
 
-For more information on this topic, please refer to [the dedicated learning page](../../stakers/validators/validator-rewards.md). 
+For more information on this topic, please refer to [the dedicated learning page](/learn/network-overview/validators/validator-rewards). 
 
 ### How to Change Fee Recipient
 

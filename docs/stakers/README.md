@@ -13,7 +13,7 @@ This page streamlines the onboarding process for staking providers, staking pool
 
 Stakers on SSV network come in various forms. Yet all of the groups supply the required capital to enable validators on the beacon chain. Capital providers must pay a fee in SSV to their chosen operators for managing their validator(s).
 
-To gain more understanding of how onboarding to SSV works conceptually and technically, check out **LEARN-PAGE1** and [Security of the Key Splitting](./security.md) pages. 
+To gain more understanding of how onboarding to SSV works conceptually and technically, check out [SSV Network Overview](/learn/network-overview/) and [Security of the Key Splitting](./security.md) pages. 
 
 ## How to integrate with SSV
 
@@ -46,7 +46,8 @@ You have to deploy multiple SSV nodes to form a cluster — repeat the full setu
 
 MEV settings are primarily on the consensus client. Follow your CL’s MEV guide [alongside SSV’s MEV guide](/operators/operator-node/setup-sidecars/configuring-mev).
 
-4. **Register Operators** (links?)
+4. **Register Operators**
+
 [Repeat this Operator Registration flow](/operators/operator-management/) once per every node you deployed. Use the public keys derived from each node’s generated private key files.
 - Set operator fee.
 - Set operator metadata.

@@ -16,10 +16,14 @@ For example, assuming there are 100 blocks per day and an operator has a set fee
 
 365 ssv / 100 blocks per day / 365 days in a year = 0.01 SSV per block
 
+You can find more details on the separate [Operator Fees page](/learn/network-overview/operators/update-fee.md).
+
 ### Network Fees <a href="#k4tw9to38r3v" id="k4tw9to38r3v"></a>
 
 In addition to operator fees, stakers are also required to pay a ‘network fee’ for each validator they run through the network.
 
-The network fee is a fixed cost determined by the DAO that governs the network. Also denominated in SSV and similar to operator fees, they are paid continuously over time to the DAO treasury.
+The network fee is a fixed cost determined by the DAO that governs the network. Also denominated in SSV and similar to operator fees, they are paid continuously over time to the DAO treasury. 
 
 This capital is used to fund, grow, and develop activities and projects in the ecosystem that have passed the voting process.
+
+The fee can change as outlined in [the DIP-11](https://snapshot.box/#/s:mainnet.ssvnetwork.eth/proposal/0x90af2241fb2b3b3242dfb98efb9185b5bafac00d1cb300542a107d0df4ef6e12), you can monitor the fee changes in [our Discord](https://discord.gg/5vT22pRBrf) announcements.

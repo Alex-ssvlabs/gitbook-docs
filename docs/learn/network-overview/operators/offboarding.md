@@ -1,9 +1,9 @@
 ---
 description: How to offboard as an operator from the SSV network
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Offboarding
+# Operator Offboarding
 
 An operator can choose to leave the network at any time. Choosing to remove an operator will:
 

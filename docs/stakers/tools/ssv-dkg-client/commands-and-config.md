@@ -61,7 +61,7 @@ If using Docker, in the config file above, `/ssv-dkg/data/` represents the conta
 :::
 
 A special note goes to the `nonce` field, which represents how many validators the address identified in the `owner` parameter has already registered to the ssv.network.
-You can keep track of this counter yourself, or you can use [the Subgraph](../ssv-subgraph/subgraph-examples.md#account-nonce) made available by the SSV team to source it.
+You can keep track of this counter yourself, or you can use [the Subgraph](/developers/api/subgraph-examples.md#account-nonce) made available by the SSV team to source it.
 #### Additional flags for  `generate-resign-msg` option:
 In addition to all of the flags above, the `generate-resign-msg` option requires one additional piece of information, which can be provided by two alternative configuration parameters:
 Note: you need to provide **one, or the other, not both** options.

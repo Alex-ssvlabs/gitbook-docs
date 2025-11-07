@@ -623,7 +623,7 @@ You will always find your performance as the best in cluster. This is expected a
 </details>
 ***
 :::info Didn't find the answer you are looking for?
-Reach out to other network operators on our [Discord channel](https://discord.gg/ssvnetworkofficial)
+Reach out to other network operators on our [Discord channel](https://discord.gg/5vT22pRBrf)
 :::
 
 [^1]: 

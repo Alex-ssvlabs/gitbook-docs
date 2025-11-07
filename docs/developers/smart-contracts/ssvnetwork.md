@@ -220,7 +220,7 @@ The approval transaction must be called on the SSV token contract, with the appr
 | operatorIds   | unit64\[]                  | List of cluster operators Ids.                                                                                                                                                                                                                                                                                                                                       |
 | sharesData    | bytes                      | String of keyshares - obtained by splitting the validator key using the [SSV-Keys](../tools/ssv-keys) tool.                                                                                                                                                                                                                                           |
 | amount        | uint256 (casted to uint64) | Amount of SSV token to be deposited as payment (not mandatory). Amount must be shrinkable (divisible by 10000000)                                                                                                                                                                                                |
-| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples#cluster-snapshot), or [SSV Scanner](../tools/ssv-scanner) tools If this is the 1st validator within a specific cluster (unique set of operators), use - \{0,0,0,true,0\} |
+| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples#cluster-snapshot) If this is the 1st validator within a specific cluster (unique set of operators), use - \{0,0,0,true,0\} |
 
 Events:
 
@@ -242,7 +242,7 @@ The approval transaction must be called on the SSV token contract, with the appr
 | operatorIds   | unit64\[]                  | List of cluster operators Ids.                                                                                                                                                                                                                                                                                                                                       |
 | sharesData    | bytes\[]                   | An array of strings of keyshares - obtained by splitting the validator key using the [SSV-Keys](../tools/ssv-keys) Each element in this array must relate to a public key in the <code>publicKeys</code> array.                                                                                                        |
 | amount        | uint256 (casted to uint64) | Amount of SSV token to be deposited as payment (not mandatory).Amount must be shrinkable (divisible by 10000000)p>                                                                                                                                                                                                      |
-| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples#cluster-snapshot), or [SSV Scanner](../tools/ssv-scanner) tools If this is the 1st validator within a specific cluster (unique set of operators), use - \{0,0,0,true,0\} |
+| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples#cluster-snapshot) If this is the 1st validator within a specific cluster (unique set of operators), use - \{0,0,0,true,0\} |
 
 Events:
 
@@ -266,7 +266,7 @@ Description: Removes validator from the SSV network.
 | ------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | publicKey     | bytes     | The validator’s public key.                                                                                                                                                                               |
 | operatorIds   | unit64\[] | List of cluster operators Ids.                                                                                                                                                                            |
-| cluster       | tuple\[]  | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples.md#cluster-snapshot), or [SSV Scanner](../tools/ssv-scanner) tools. |
+| cluster       | tuple\[]  | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](/developers/api/subgraph-examples#cluster-snapshot). |
 
 Events:
 
@@ -280,7 +280,7 @@ Description: Removes all the validators provided as argument from the SSV networ
 | ------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | publicKeys    | bytes\[]  | An array of validators’ public keys.                                                                                                                                                                      |
 | operatorIds   | unit64\[] | List of cluster operators Ids.                                                                                                                                                                            |
-| cluster       | tuple\[]  | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples.md#cluster-snapshot), or [SSV Scanner](../tools/ssv-scanner) tools. |
+| cluster       | tuple\[]  | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](/developers/api/subgraph-examples#cluster-snapshot). |
 
 Events:
 
@@ -337,7 +337,7 @@ The approval transaction must be called on the SSV token contract, with the appr
 | owner         | address                    | The cluster owner address                                                                                                                                                                                 |
 | operatorIds   | unit64\[]                  | List of cluster operators Ids.                                                                                                                                                                            |
 | amount        | uint256 (casted to uint64) | $SSV amount to be deposited. Amount must be shrinkable (divisible by 10000000)                                                                                   |
-| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples.md#cluster-snapshot), or [SSV Scanner](../tools/ssv-scanner) tools. |
+| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](/developers/api/subgraph-examples#cluster-snapshot). |
 
 Events:
 
@@ -351,7 +351,7 @@ Description: Withdraws a specified amount of SSV tokens from cluster of msg.send
 | ------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | operatorIds   | unit64\[]                  | List of cluster operators Ids.                                                                                                                                                                            |
 | amount        | uint256 (casted to uint64) | Amount to be withdrawn. Amount must be shrinkable (divisible by 10000000)                                                                                         |
-| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples.md#cluster-snapshot), or [SSV Scanner](../tools/ssv-scanner) tools. |
+| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](/developers/api/subgraph-examples#cluster-snapshot). |
 
 Events:
 
@@ -372,7 +372,7 @@ The approval transaction must be called on the SSV token contract, with the appr
 | operatorIds   | unit64\[]                  | List of cluster operators Ids.                                                                                                                                                                            |
 | amount        | uint256 (casted to uint64) | $SSV amount to be deposited. Amount must be shrinkable (divisible by 10000000)
                                               |
-| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples.md#cluster-snapshot), or [SSV Scanner](../tools/ssv-scanner) tools. |
+| cluster       | tuple\[]                   | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](/developers/api/subgraph-examples#cluster-snapshot). |
 
 Events:
 
@@ -390,7 +390,7 @@ Description: Liquidates a cluster sends their balances to the msg.sender (the Li
 | ------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | owner         | address   | The cluster owner address                                                                                                                                                                                 |
 | operatorIds   | unit64\[] | List of cluster operators Ids.                                                                                                                                                                            |
-| cluster       | tuple\[]  | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](../tools/ssv-subgraph/subgraph-examples.md#cluster-snapshot), or [SSV Scanner](../tools/ssv-scanner) tools. |
+| cluster       | tuple\[]  | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](/developers/api/subgraph-examples#cluster-snapshot). |
 
 Events:
 

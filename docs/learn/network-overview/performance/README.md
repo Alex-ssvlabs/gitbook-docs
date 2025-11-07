@@ -1,6 +1,6 @@
 ---
 description: Understanding performance metrics in the SSV network
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Performance
@@ -105,4 +105,4 @@ Operators can check out [**Troubleshooting section**](/operators/operator-node/m
 
 ## Calculations explained
 
-You can find all used formulas on [this separate page](/learn/performance/calculations.md).
+You can find all used formulas on [this separate page](/learn/network-overview/performance/calculations.md).

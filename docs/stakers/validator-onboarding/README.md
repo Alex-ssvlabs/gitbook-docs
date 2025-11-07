@@ -12,3 +12,7 @@ Follow our guides in this order:
 2. [Calculate Costs](./calculate-costs.md)
 3. [Register Validators](./register-validators.md)
 4. [Post-Onboarding Checks](./post-onboarding-checks.md)
+
+:::note Automations
+Most of these steps can be automated programmatically. If you wish to do so, please check out [Developers Tutorials page](/developers/examples/).
+:::

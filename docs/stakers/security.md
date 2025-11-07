@@ -213,4 +213,4 @@ private async processFile(
 ```
 
 ## Key Splitting Instructions
-You can follow the step-by-step instructions in the [**Validator Migration section**](./validator-migration/README.md).
+You can follow the step-by-step instructions in the [**Validator Onboarding section**](/stakers/validator-onboarding/).

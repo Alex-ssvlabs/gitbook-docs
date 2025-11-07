@@ -1,6 +1,6 @@
 ---
 description: Understanding verified operators in the SSV network
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 # Verified Operators

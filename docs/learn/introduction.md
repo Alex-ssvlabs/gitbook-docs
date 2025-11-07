@@ -5,9 +5,11 @@ sidebar_position: 1
 
 # Introduction
 
-### **What is ssv.network**
+Welcome to the ssv.network Learn section! 
 
-ssv.network is a fully decentralized, open-source ETH staking network, based on Secret Shared Validator (SSV) technology.
+### **What is [ssv.network](https://ssv.network/)**
+
+[ssv.network](https://ssv.network/) is a fully decentralized, open-source ETH staking network, based on Secret Shared Validator (SSV) technology.
 
 SSV is also known as DVT, or Distributed Validator Technology, as it provides an open and simple infrastructure for splitting and distributing a validator key into multiple KeyShares, for the purpose of running an Ethereum validator across multiple non-trusting nodes.
 
@@ -26,3 +28,11 @@ SSV allows the validator key to be generated, split into multiple KeyShares for 
 **Decentralization & Diversity**
 
 Independent operators, located all over the world, provide the infrastructure for ssv.network and are responsible for maintaining its overall health. Each operator is free to choose the validator client(s) software they will run and their hardware infrastructure, while stakers are free to choose the independent operators that will run their validator(s). This increases the overall health of the Ethereum blockchain and further eliminates single points of failure and risk for stakers by allowing validators to run on multiple clients.
+
+### What else? 
+
+Feel free to check out other pages in the Learn section:
+- [**Network Overview**](/learn/network-overview/network-overview.md) - Relations between each actor in SSV as a protocol, as well as other related concepts.
+- [**SSV Token Overview**](/learn/tokenomics/README.md) - Purpose of $SSV and its tokenomics.
+- [**Tech Overview**](/learn/tech-overview.md) - Technical concepts that are at the core of ssv.network.
+- [**Glossary**](/learn/glossary.md) - Terminology used by our documentation.

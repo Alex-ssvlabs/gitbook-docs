@@ -11,8 +11,8 @@ SSV Network requires validators to pay annual network fees in $SSV tokens. To su
 - Collateral is fully refundable when validators are offboarded.
 
 For detailed explanations, see:
-- **SSV Docs: Cluster Balances** ←←←
-- [SSV Docs: Liquidations](https://docs.ssv.network/learn/protocol-overview/tokenomics/liquidations/)
+- [SSV Docs: Cluster Balance](/learn/network-overview/clusters/cluster-balance)
+- [SSV Docs: Liquidations](/learn/tokenomics/liquidations/)
 
 ## Example Costing Table
 | Validators | Annual Fee / Validator | Annual Total | Monthly Runway | Liquidation Collateral | Initial Funding Target |
@@ -22,7 +22,7 @@ For detailed explanations, see:
 
 
 :::info Incentivized Mainnet
-DAO incentives may partially be applied to cover network fees. Check the **Incentivized Mainnet Rewards section** ←←← and the [Incentive Calculator](https://docs.google.com/spreadsheets/d/1EmsAuwfXtnu_2_y6vjMKrXWpLISzbWL8kZOdJznKEUU/edit?gid=0#gid=0) for additional details
+DAO incentives may partially be applied to cover network fees. Check the [Incentivized Mainnet Rewards section](/stakers/incentivized-mainnet.md) and the [Incentive Calculator](https://docs.google.com/spreadsheets/d/1EmsAuwfXtnu_2_y6vjMKrXWpLISzbWL8kZOdJznKEUU/edit?gid=0#gid=0) for additional details
 :::
 
 ## Next Steps

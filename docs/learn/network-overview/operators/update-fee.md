@@ -1,15 +1,39 @@
 ---
 description: How to update operator fees in the SSV network
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Update Fee
+# Operator Fee
 
 On this page you will find educational concepts, to see the actionable steps to Updating Fee [check out this page](/operators/operator-management/updating-operator-fees).
 
-Fees are initially set when registering an operator but can be changed at any point in time.
+Fees are initially set when registering an operator and can be changed at any point in time.
 
 Fee changes are generally initiated to stay competitive with other operators or to align with SSV market price fluctuations.
+
+### Operator Fee
+
+Operators set their own fees - denominated in SSV tokens - to be charged per each validator that selects them as one of their operators.
+
+Operator earnings are paid to their account balance, and can be withdrawn to their wallet at any time.
+
+**Fee Configuration**
+
+Operators initially set their fee when registering an operator to the network.
+
+Fees are presented as annual payments, but in practice are paid to operators continuously as an ongoing process - per each passed block.
+
+This means that when setting the operator fee through the smart contract (whether at registration or fee updates), operators should set their preferred fee according to a fee per block format.
+
+* To calculate fee per block according to a desired annual fee in fiat (USD):
+
+$$ Fee\;per\;block = \dfrac{Annual\;Fee_{usd}}{SSV_{usd}}\;/\;Blocks_{year} $$
+
+
+Where:
+- $\text{Annual Fee}_{usd}$ - desired fee per year in USD
+- $SSV_{usd}$ - SSV price in USD  
+- $Blocks_{year}$  - avg. number of blocks per year ([reference](https://ycharts.com/indicators/ethereum_blocks_per_day))
 
 ### Fee Increase Process
 

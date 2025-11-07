@@ -6,7 +6,7 @@ sidebar_position: 7
 
 This page will show how to use the API module to do various calls. The API module is used to get data such as the Account Nonce, or Cluster Snapshot, both are covered on this page.&#x20;
 
-For the full list of functions you can check the [API Module Reference](../module-reference/api-module.md).
+For the full list of functions you can check the [API Module Reference](/developers/SSV-SDK/module-reference/api-module.md).
 
 ### Get Nonce&#x20;
 

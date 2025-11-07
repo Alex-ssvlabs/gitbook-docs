@@ -1,11 +1,11 @@
 ---
 description: Understanding permissioned operators in the SSV network
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 # Permissioned Operators
 
-### What are Permissioned Operators?
+## What are Permissioned Operators?
 
 Permissioned Operators (also known as "Private") are Operators that have selected to authorize only a list of wallet addresses to register validators to them. There are multiple reasons why an Operator would want this, and various reasons why they would **not** want to choose this option, and why this disabled by default.
 
@@ -13,7 +13,7 @@ Permissioned Operators (also known as "Private") are Operators that have selecte
 The latest version of the SSVNetworks smart contract adds the ability to set multiple whitelisted addresses to multiple operators in bulk. Information on how to do this via the webapp can be found [here](/operators/operator-management/configuring-a-permissioned-operator).
 :::
 
-#### How to identify Permissioned Operators
+### How to identify Permissioned Operators
 
 When an Operator owner chooses to identify their Operator as Permissioned, **any smart contract transaction to register a validator with such Operator will fail**, if the sender of the transaction is not included in the list of whitelisted addresses.
 
@@ -25,20 +25,18 @@ Similarly, the [SSV Explorer](https://explorer.ssv.network/operators/1) also sho
 
 ![permissioned-operator](/img/permissioned-operators-2.avif)
 
-#### SSV Subgraph&#x20;
+### SSV Subgraph
 
-SSV also provide a subgraph to easily look up information on permissioned Operators, this tracks all the events surrounding whitelisting and means we can check which operators are private, and which addresses are whitelisted per operator. You can find out more details on how to use the subgraph [**here**](../../developers/tools/ssv-subgraph/)**.**
+SSV also provide a subgraph to easily look up information on permissioned Operators, this tracks all the events surrounding whitelisting and means we can check which operators are private, and which addresses are whitelisted per operator. You can find out more details on how to use the subgraph [**here**](/developers/api/ssv-subgraph/)**.**
 
-One last way to verify this is to use the [SSV Network Views smart contract](../../developers/smart-contracts/ssvnetworkviews.md#getoperatorbyid-operatorid).
+One last way to verify this is to use the [SSV Network Views smart contract](/developers/smart-contracts/ssvnetworkviews.md#getoperatorbyid-operatorid).
 
-#### Use Cases
+### Use Cases
 
 Since setting an operator as Permissioned Operator has the consequence of renouncing from potentially being chosen by public customers to operate their validators, let's talk about the upsides, and why one would choose to do so. The main use cases for a Permissioned Operator are:
 
 * using SSV network exclusively for coordinating one's own private infrastructure
 * operating a staking service with discounts or alternative fee structure
-
-This is possibly why Permissioned Operators are the preferred configuration of many [Staking Services](../../developers/integration-guides/staking-services.md).
 
 Operators have to choose an Operator Fee when registering to ssv.network, **this fee will be the same for everyone** registering validators to the selected Operator.
 
@@ -48,7 +46,7 @@ The team could elect to reduce Operator Fees to 0, but this would mean that **ev
 
 In practical terms, this means renouncing the potential profits from public customers choosing their Operator and paying Operator fees, but if the team projects that the service fees paid to the Staking Service and the convenience of not paying Operator fees will outweigh the potential missed revenue, then this is the right choice for them.
 
-### How to become a Permissioned Operator?
+## How to become a Permissioned Operator?
 
 The **`setOperatorMultipleWhitelists`** smart contract function allows to whitelist a set of addresses to a number of different with the permission to register validators to the specified operators.
 

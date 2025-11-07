@@ -15,7 +15,7 @@ To use the ssv.network, stakers are required to deposit a sufficient balance of 
 
 Since transactions on Ethereum aren't free, and users can't incur additional costs if their account runs out of balance, an incentivization model is required to keep the system solvent.
 
-This requires additional actors called [Liquidators](../../../operators/liquidator-bot/) to work behind the scenes to keep the system functioning by flagging users that have insufficient balances to carry their expenses.
+This requires additional actors called [Liquidators](/operators/liquidator-bot/) to work behind the scenes to keep the system functioning by flagging users that have insufficient balances to carry their expenses.
 
 The ssv network rewards liquidators for the costs and risks associated with liquidating insolvent clusters. The provided collateral serves as a liquidation penalty for clusters and a reward to liquidators for their efforts.
 
@@ -30,7 +30,7 @@ liquidatable = balance<max(MLC, burn\;rate * LTP)
 $$
 
 #### Legend:
-* $balance$ - cluster balance, [please refer to this page for exact calculation](../../../stakers/clusters/cluster-balance.md)) (denominated in SSV tokens)
+* $balance$ - cluster balance, [please refer to this page for exact calculation](/learn/network-overview/clusters/cluster-balance.md) (denominated in SSV tokens)
 * $burn\;rate$ - projected cluster expenses (denominated in SSV tokens per block)
 * [$MLC$](liquidations.md#minimum-liquidation-collateral) - minimum liquidation collateral (denominated in SSV tokens)
 * [$LTP$](liquidations.md#liquidation-threshold-period) - liquidation threshold period (denominated in blocks)
@@ -39,11 +39,11 @@ Liquidated clusters will no longer be managed by operators and will become inact
 
 ### Minimum Liquidation Collateral
 
-This is a fixed constant, set by the SSV DAO and accessible through the [SSV Network Views smart contract](/developers/smart-contracts/ssvnetworkviews#getminimumliquidationcollateral) or via the [Subgraph](/developers/tools/ssv-subgraph/subgraph-examples#dao-constants-and-protocol-network-fee-index).
+This is a fixed constant, set by the SSV DAO and accessible through the [SSV Network Views smart contract](/developers/smart-contracts/ssvnetworkviews#getminimumliquidationcollateral) or via the [Subgraph](/developers/api/subgraph-examples#dao-constants-and-protocol-network-fee-index).
 
 ### **Liquidation Threshold Period**
 
-This is another fixed constant, set by the SSV DAO and accessible through the [SSV Network Views smart contract](/developers/smart-contracts/ssvnetworkviews#getliquidationthresholdperiod-) or via the [Subgraph](/developers/tools/ssv-subgraph/subgraph-examples#dao-constants-and-protocol-network-fee-index). This can be defined as:
+This is another fixed constant, set by the SSV DAO and accessible through the [SSV Network Views smart contract](/developers/smart-contracts/ssvnetworkviews#getliquidationthresholdperiod-) or via the [Subgraph](/developers/api/subgraph-examples#dao-constants-and-protocol-network-fee-index). This can be defined as:
 
 > The minimum period (in blocks) for a cluster to maintain sufficient balance before they can be liquidated
 
@@ -70,7 +70,7 @@ $$
 
 Upon successful liquidation, the cluster will be flagged as "inactive". This will signal the operators managing the cluster's validators to cease their operation.
 
-Clusters that have been liquidated can no longer use the network to run their validators until [reactivation](../../../stakers/clusters/reactivation.md).
+Clusters that have been liquidated can no longer use the network to run their validators until [reactivation](/learn/network-overview/clusters/reactivation.md).
 
 ### Liquidation Scenario Example
 

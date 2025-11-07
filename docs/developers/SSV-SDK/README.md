@@ -69,7 +69,7 @@ const sdk = new SSVSDK({
 ```
 
 The `extendedConfig` parameter is optional, if not provided, the SDK will use the development endpoint. Bear in mind that this is rate limited, though, so it is strongly advised to use an API key with the free plan.
-For more information regarding your subgraph API key, please refer to the [dedicated Subgraph page](../tools/ssv-subgraph/README.md).
+For more information regarding your subgraph API key, please refer to the [dedicated Subgraph page](/developers/api/ssv-subgraph.md).
 
 ### Initialization Parameters
 

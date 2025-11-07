@@ -20,7 +20,7 @@ Essential items for integrating with SSV:
 - Lastly, you can start experimenting by interacting with [our Hoodi Testnet](/developers/testnet) smart contracts, before interacting [with the Mainnet ones](/developers/smart-contracts/README.md).
 
 :::note Prerequisite
-This tutorial assumes you already have keystores generated, or will use the [*code illustrated here*](/developers/SSV-SDK/examples/create-validator-keys.md) to generate them pragmatically.
+This tutorial assumes you already have keystores generated, or will use the [*code illustrated here*](/developers/examples/create-validator-keys.md) to generate them pragmatically.
 :::
 
 ### Overview

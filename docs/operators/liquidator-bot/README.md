@@ -5,7 +5,7 @@ sidebar_position: 9
 
 # Liquidator Bot
 
-The SSV Liquidator bot executes [liquidations](../../learn/protocol-overview/tokenomics/liquidations.md) on ssv.network [clusters](/stakers/clusters/) that do not hold enough balance to pay for their [operational fees](../../learn/protocol-overview/tokenomics/fees.md)
+The SSV Liquidator bot executes [liquidations](/learn/tokenomics/liquidations.md) on ssv.network [clusters](/learn/network-overview/clusters/) that do not hold enough balance to pay for their [operational fees](/learn/tokenomics/fees.md)
 
 The liquidator bot performs 2 main processes:
 
@@ -24,6 +24,6 @@ OWNER                                          OPERATORIDS     BALANCE     BURNR
 ```
 
 2. **Liquidating accounts** \
-   Once the potential liquidation block is reached the liquidator bot will call the [liquidate()](../../developers/smart-contracts/ssvnetwork#liquidateowner-operatorids-cluster) function in the network contract, if the bot was the first to successfully pass the transaction the cluster will be liquidated and its SSV collateral will be sent to the wallet address which performed the liquidation &#x20;
+   Once the potential liquidation block is reached the liquidator bot will call the [liquidate()](/developers/smart-contracts/ssvnetwork#liquidateowner-operatorids-cluster) function in the network contract, if the bot was the first to successfully pass the transaction the cluster will be liquidated and its SSV collateral will be sent to the wallet address which performed the liquidation &#x20;
 
 You can find the [installation instructions here](./installation).

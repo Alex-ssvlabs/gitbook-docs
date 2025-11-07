@@ -46,7 +46,7 @@ After registering the first 80 validators, pause and confirm that:
 ## Set the Fee Recipient Address
 By default, your own address will be set as Fee Recipient for block proposals. 
 
-Depending on your operations and off-chain arrangements, you might need to change that address. Use the **SSV Docs guide to change the Fee Recipient** ←←←.
+Depending on your operations and off-chain arrangements, you might need to change that address. Use the [SSV Docs guide to change the Fee Recipient](/stakers/cluster-management/setting-fee-recipient-address.md).
 
 ## Monitor Validators
 Once onboarding is complete, monitor validator performance and cluster health:
@@ -59,4 +59,4 @@ Attestations may take up to 3 epochs to appear after registration.
 ## Next Steps
 Congratulations! Your validators were migrated successfully 🥳.
 
-You can check out [**Post-Migration steps**](../post-migration/README.md) to ensure smooth long-term operations.
+You can check out [**Post-Migration steps](/stakers/validator-onboarding/post-onboarding-checks.md) to ensure smooth long-term operations.

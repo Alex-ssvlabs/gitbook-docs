@@ -11,17 +11,17 @@ It is important to be aware that the cluster balance must **always be higher tha
 
 ![Operational Runway](/img/cluster-balance-1.avif)
 
-Since operator and network fees are dynamic, the required [**Liquidation Collateral**](../../learn/protocol-overview/tokenomics/liquidations.md#liquidation-collateral) could vary between different clusters. To calculate how much funding is needed as collateral for a cluster, please refer to the [Liquidations page](../../learn/protocol-overview/tokenomics/liquidations.md#liquidators).
+Since operator and network fees are dynamic, the required [**Liquidation Collateral**](/learn/tokenomics/liquidations) could vary between different clusters. To calculate how much funding is needed as collateral for a cluster, please refer to the [Liquidations page](/learn/tokenomics/liquidations).
 
 ### Cluster Balance Formula
 
-As explained in the documentation page related to [Payments](../../learn/protocol-overview/tokenomics/payments.md), the cluster balance is affected by three factors, mainly:
+As explained in the documentation page related to [Payments](/learn/tokenomics/payments.md), the cluster balance is affected by three factors, mainly:
 
 * Network fee
 * Operator fees
 * Number of validators
 
-And to keep track of their changes over time, the concept of [Indexes](../../learn/protocol-overview/tokenomics/payments.md#indexes) have been introduced. This, in turn, means that indexes for network fees and operator fees are necessary to calculate the cluster balance, as well as [the "snapshot" of the cluster status](/developers/tools/ssv-subgraph/subgraph-examples#cluster-snapshot), taken the last time this was updated (the cluster snapshot is also used in smart contract transactions).
+And to keep track of their changes over time, the concept of [Indexes](/learn/tokenomics/payments#indexes) have been introduced. This, in turn, means that indexes for network fees and operator fees are necessary to calculate the cluster balance, as well as [the "snapshot" of the cluster status](/developers/tools/ssv-subgraph/subgraph-examples#cluster-snapshot), taken the last time this was updated (the cluster snapshot is also used in smart contract transactions).
 
 #### Cluster balance
 

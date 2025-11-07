@@ -62,7 +62,7 @@ This page will offer two options - generate key shares or upload the prepared on
 Now, select the operators you split your keys to. Please note the **Yearly Fee** for the setup you created before hitting the Next button.
 
 :::info Verified Operators
-**Important:** [Verified Operators (VOs)](/docs/operators/operator-onboarding/verified-operators.md) are operators that have been granted the **Verified** status by the DAO for completing KYC and providing consistent high-quality service. You can sort the operator list by their daily performance, yearly fee, and # of validators they manage. You can also filter to view only Verified Operators.
+**Important:** [Verified Operators (VOs)](/learn/network-overview/operators/verified-operators) are operators that have been granted the **Verified** status by the DAO for completing KYC and providing consistent high-quality service. You can sort the operator list by their daily performance, yearly fee, and # of validators they manage. You can also filter to view only Verified Operators.
 :::
 
 ![Distribute a validator](/img/distributing-a-val-4.avif)
@@ -141,7 +141,9 @@ You can select the operational runway period of your validator, in accordance wi
 ![Distribute a validator](/img/distributing-a-val-11.avif)
 
 :::warning Please read carefully
-Understand how fees are managed and the risks of account [**liquidation**](../../learn/glossary.md#liquidation) if your account balance falls below the [**Threshold Balance**](../../learn/glossary.md#liquidation-collateral).
+Understand how fees are managed and the risks of account [**liquidation**](/learn/glossary.md#liquidation) if your account balance falls below the [**Threshold Balance**](/learn/glossary.md#liquidation-collateral).
+
+[**Cluster balance**](/learn/network-overview/clusters/cluster-balance) page explains the balance concept in general.
 :::
 
 ![Distribute a validator](/img/distributing-a-val-12.avif)

@@ -113,11 +113,9 @@ Once the transaction has been signed and confirmed by the network, your validato
 ### Inactivity penalties warning
 
 :::warning
-This will cause the validator to go offline. It is advised to have an alternative validator setup ready to continue operating outside ssv.network, [as explained here](/stakers/validators/validator-offboarding). **--- CHANGE LINK HERE**
+This will cause the validator to go offline. If you're planning to migrate and not exit - it is advised to have an alternative validator setup ready to continue operating outside ssv.network, [as explained here](/learn/network-overview/validators/validator-offboarding).
 
 Removing the validator is **NOT** reversible, the validator will have to be registered anew on the ssv.network, should you intend to join again.
-
-Please read the text carefully and understand the implications of removing your validator from the network.
 :::
 
 The following screen alerts you of the implications of removing the validator from the cluster.

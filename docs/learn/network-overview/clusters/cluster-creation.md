@@ -2,15 +2,11 @@
 sidebar_position: 1
 ---
 
-# Validator Onboarding
-
-Below is the educational context around Validator Onboarding, you can find actionable steps on pages:
-- [Validator management](../validator-management/README.md), if you don't have a cluster yet.
-- [Adding validators](../cluster-management/adding-validator-to-existing-cluster.md), if you already have a cluster.
+# Cluster Creation
 
 ### Operators Selection <a href="#_jm9n7m464k0" id="_jm9n7m464k0"></a>
 
-To onboard a validator you need to form your cluster — you must select your preferred group of operators to manage it.
+To create a cluster means to onboard a new validator. Any cluster consists of a group of operators to manage the validators.
 
 The complete operator registry can be accessed through the ssv.network’s [webapp](http://app.ssv.network), [explorer](http://explorer.ssv.network), and [SSV API](https://api.ssv.network/documentation/).
 
@@ -45,7 +41,7 @@ With the network embracing a free-market approach, where operators set their own
 
 In addition to fees, there’s a minimum balance requirement, known as [liquidation collateral](../clusters/cluster-balance), that has to be deposited for each validator a user runs through the network.
 
-### Validator Funding <a href="#_kumpogh364aq" id="_kumpogh364aq"></a>
+### Cluster Funding <a href="#_kumpogh364aq" id="_kumpogh364aq"></a>
 
 To carry validators operational costs, the validator's cluster must be funded with an appropriate amount of SSV (see [Cluster Balance](../clusters/cluster-balance.md)).
 

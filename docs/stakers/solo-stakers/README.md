@@ -9,7 +9,7 @@ sidebar_position: 6
 
 Stakers on SSV network come in various forms. Yet all of the groups supply the required capital to enable validators on the beacon chain. Capital providers must pay a fee in SSV to their chosen operators for managing their validator(s).
 
-To gain more understanding of how onboarding to SSV works conceptually and technically, check out **LEARN-PAGE1** and [Security of the Key Splitting](./security.md) pages. 
+To gain more understanding of how onboarding to SSV works conceptually and technically, check out [SSV Network Overview](/learn/network-overview/) and [Security of the Key Splitting](/stakers/security.md) pages. 
 
 ## How to integrate with SSV
 

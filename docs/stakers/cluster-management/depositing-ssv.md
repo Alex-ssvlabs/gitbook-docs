@@ -11,7 +11,7 @@ Make sure to connect your Web3 address/wallet with the WebApp. Use the address y
 :::info SSV Token
 SSV Token is used as as the payment layer of the network and the cluster balance is necessary to reward its operators.
 
-For more information on this topic, please refer to [the dedicated learning page](/stakers/clusters/cluster-balance).
+For more information on this topic, please refer to [the dedicated learning page](/learn/network-overview/clusters/cluster-balance).
 :::
 
 <Tabs>
