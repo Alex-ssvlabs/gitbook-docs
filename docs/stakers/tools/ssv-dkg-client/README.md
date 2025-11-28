@@ -23,7 +23,7 @@ SSV DKG leverages [drand's DKG protocol](https://drand.love/docs/cryptography/#s
 \
 The `ssv-dkg` introduces a communication layer centered around an Initiator figure to facilitate inter-operator communication, eliminating the reliance on a fully decentralized network. \
 \
-To mitigate potential centralization risks and malicious actors, the system employs a robust mechanism of signatures and signature verifications, as elaborated in the [Security notes](./#security-notes) section.
+To mitigate potential centralization risks and malicious actors, the system employs a robust mechanism of signatures and signature verifications, as elaborated in the [Security notes](#security-notes) section.
 
 Through the `ssv-dkg` client, stakers can initiate DKG ceremonies to generate new BLS key pairs for Ethereum validators and the key shares required for SSV network registration.
 
@@ -71,10 +71,8 @@ A `ssv-dkg` can handle multiple DKG instances, it saves up to `MaxInstances` (10
 
 ## Security Notes
 
-:::info
-The `ssv-dkg` tool has recently been audited, you can find more details about it [on the Security page](../../security.md#audit-resources).
-
-A second audit of the `ssv-dkg` tool covered the necessary changes to introduce keyshares regeneration through DKG. This is also listed [on the Security page](../../security.md#audit-resources).
+:::info DKG Audit
+The `ssv-dkg` tool has recently been audited, you can find more details about it [on the Security page](/learn/security/audits)
 :::
 
 It is important to briefly explain how the communication between DKG ceremony Initiator and Operators is secured:

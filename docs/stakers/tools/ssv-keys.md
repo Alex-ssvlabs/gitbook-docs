@@ -53,7 +53,7 @@ Using the `ssv-keys` SDK can be simply summarized in 3 steps:
 :::info
 A requirement for splitting the keys of a validator, is to know the validator key owner's nonce (how many times this address has callded the registerValidator() function of the SSV contract) and their address.
 
-These can be obtained via the [SSV SDK](/developers/SSV-SDK/module-reference/api-module#getownernoncestring-account_address), or the [SSV Subgraph](./ssv-subgraph/subgraph-examples/#account-nonce).
+These can be obtained via the [SSV SDK](/developers/SSV-SDK/module-reference/api-module#getownernoncestring-account_address), or the [SSV Subgraph](/developers/api/subgraph-examples#account-nonce).
 :::
 
 ## Example

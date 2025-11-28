@@ -39,7 +39,7 @@ Changing the fee recipient on SSV applies to **all validators owned by an accoun
 
 Validator keys for the CSM module can be created the same way as any other validator key, with one difference mentioned above: **you must** **set the withdrawal address to** [**the Lido Withdrawal vault**](https://etherscan.io/address/0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f).
 
-So for this step, you can simply follow the [guide on generating validator keys found here](../../stakers/validator-management/creating-a-new-validator), just know that when generating the keys, the withdrawal address needs to be set to this value:
+So for this step, you can simply follow the [guide on generating validator keys found here](/stakers/solo-stakers/creating-a-new-validator), just know that when generating the keys, the withdrawal address needs to be set to this value:
 
 ```
 0xB9D7934878B5FB9610B3fE8A5e441e8fad7E293f
@@ -54,7 +54,7 @@ Make sure to take note of the keystore password you used to generate these keys.
 
 ### 2. Register the validator with SSV
 
-To register your validator with SSV you can follow [the related guide in this documentation](../../stakers/validator-management/distributing-a-validator). All of the steps you need to follow are exactly the same as the ones for a CSM validator. Make sure to have your keystore file and password ready.
+To register your validator with SSV you can follow [the related guide in this documentation](/stakers/solo-stakers/distributing-a-validator). All of the steps you need to follow are exactly the same as the ones for a CSM validator. Make sure to have your keystore file and password ready.
 
 You can move onto the next step once your validator is registered to a cluster as shown below.
 

@@ -15,7 +15,7 @@ If you're new to ssv network, go through [the Learn section](/learn/introduction
 Essential items for integrating with SSV:
 - [Quickstart guide below](#overview) shows how to automate bulk validator registration.
 - You can also find several [other Guides](/developers/examples/) in the respective section.
-- On-chain data is made available via [Subgraph](./tools/ssv-subgraph/) and the [SSV API](https://api.ssv.network/documentation/#/v4) (e.g. operator metadata).
+- On-chain data is made available via [Subgraph](/developers/api/ssv-subgraph/) and the [SSV API](https://api.ssv.network/documentation/#/v4) (e.g. operator metadata).
 - We recommend integrating with SSV by using [the SDK](/developers/SSV-SDK/). You can better understand how it is structured with [SSV SDK Module Reference](/developers/SSV-SDK/module-reference/).
 - Lastly, you can start experimenting by interacting with [our Hoodi Testnet](/developers/testnet) smart contracts, before interacting [with the Mainnet ones](/developers/smart-contracts/README.md).
 
@@ -94,7 +94,7 @@ If you need to choose operators, feel free to browse [SSV Explorer](https://expl
 
 <Tabs>
   <TabItem value="subgraph" label="Subgraph">
-    To generate keyshares, operator IDs and their public keys are needed. You can collect keys of each operator using [SSV Subgraph](/developers/tools/ssv-subgraph). You will need to create own Graph API key and use endpoint with it. 
+    To generate keyshares, operator IDs and their public keys are needed. You can collect keys of each operator using [SSV Subgraph](/developers/api/ssv-subgraph/). You will need to create own Graph API key and use endpoint with it. 
 
     Alternatively, you can do it using [The Graph UI](https://thegraph.com/explorer/subgraphs/F4AU5vPCuKfHvnLsusibxJEiTN7ELCoYTvnzg3YHGYbh?view=Query&chain=arbitrum-one). 
 

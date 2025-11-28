@@ -1,5 +1,5 @@
 ---
-title: Configuring MEV
+title: Configure MEV
 sidebar_position: 2
 ---
 

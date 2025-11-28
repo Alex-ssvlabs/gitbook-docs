@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 # Troubleshooting
 
 ## Overview
-Troubleshooting is divided in 2 sections: tools to identify and solutions to resolve issues.
+Troubleshooting is divided in 2 sections: tools to identify issues and solutions to resolve them.
 
 **Solutions**:
 - [FAQ](#faq) - short answers on the most common questions.

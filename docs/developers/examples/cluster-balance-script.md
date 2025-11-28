@@ -6,10 +6,10 @@ sidebar_position: 5
 
 The script below calculates the current balance of a given cluster, through two actions, mainly:
 
-* Query the subgraph for the relevant data (see the [Subgraph Examples](../tools/ssv-subgraph/subgraph-examples) page for more information)
+* Query the subgraph for the relevant data (see the [Subgraph Examples](/developers/api/subgraph-examples) page for more information)
 * Use these values to compute the current cluster balance for the specified cluster, outputting the amount in SSV
 
-Details on the formulas used can be found in the documentation page related to [Cluster Balance](../../stakers/clusters/cluster-balance).
+Details on the formulas used can be found in the documentation page related to [Cluster Balance](/learn/network-overview/clusters/cluster-balance).
 
 ```javascript
 // Import the fetch function from node-fetch

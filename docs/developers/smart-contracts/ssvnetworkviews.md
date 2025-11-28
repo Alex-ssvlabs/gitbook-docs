@@ -160,7 +160,7 @@ Description: Returns the outstanding SSV balance of a cluster.
 |-----------|------|-------------|
 | owner | address | The cluster owner address |
 | operatorIds | uint64[] | List of cluster operators Ids |
-| cluster | tuple[] | Object containing the latest cluster snapshot data - obtained using the [SSV Scanner](/developers/tools/ssv-scanner) tool |
+| cluster | tuple[] | Object containing the latest cluster snapshot data - obtained using the [SSV Subgraph](/developers/api/subgraph-examples#cluster-snapshot) tool. |
 
 Return values:
 

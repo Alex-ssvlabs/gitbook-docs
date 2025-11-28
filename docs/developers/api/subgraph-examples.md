@@ -262,7 +262,7 @@ Output
 
 ### Cluster Balance Values
 
-Returns all necessary data needed to compute the [Cluster Balance](../../../stakers/clusters/cluster-balance).
+Returns all necessary data needed to compute the [Cluster Balance](/learn/network-overview/clusters/cluster-balance).
 
 <Tabs>
   <TabItem value="graphql" label="GraphQL">

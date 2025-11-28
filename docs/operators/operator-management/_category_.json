@@ -1,0 +1,8 @@
+{
+  "label": "Operator Management",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "operators/operator-management/registration"
+  }
+}

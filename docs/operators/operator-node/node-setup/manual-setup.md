@@ -8,78 +8,17 @@ import TabItem from '@theme/TabItem';
 
 # Manual Node setup
 
-:::info
-This is guide is for advanced users, if you are unsure why you'd want to setup manually — we recommend choosing [automated setup with SSV Node stack](.).
+:::info This guide is for Advanced users
+**If you are unsure why you'd want to setup manually** - choose the [automated setup with SSV Stack](/operators/operator-node/node-setup/).
+
+**If you run into issues while running the node**, try and [take a look at the troubleshooting page](/operators/operator-node/maintenance/troubleshooting).
 :::
 
 ### Pre-requisites
 
-#### Enable SSH
-
-You will need to be able to connect to your server:
-
-### SSH Access Options
-
-<details>
-
-<summary>SSH into a local machine</summary>
-
-[https://docs.ethstaker.cc/ethstaker-knowledge-base/tutorials/connect-via-ssh](https://docs.ethstaker.cc/ethstaker-knowledge-base/tutorials/connect-via-ssh)
-
-</details>
-
-<details>
-
-<summary>SSH into a Cloud server (e.g. AWS)</summary>
-
-If you have generated an SSH key for your server or downloaded one from your Cloud hosting provider (e.g. AWS)
-
-**MacOS**
-
-```
-cd ./{path to the folder to which the key pair file was downloaded}
-
-chmod 400 {key pair file name}
-
-ssh -i {key pair file name} ubuntu@{instance public IP you took from AWS}
-
-```
-
-**Windows**
-
-```
-cd /{path to the folder to which the key pair file was downloaded}
-
-ssh -i {key pair file name} ubuntu@{instance public IP you took from AWS}
-```
-
-</details>
-
-<details>
-
-<summary>Docker (Optional)</summary>
-
-**If you choose to use Docker** to launch the SSV Node, another fundamental pre-requisite is to have Docker installed on the machine hosting the SSV Node. In order to do so, please refer to [the official Docker documentation](https://docs.docker.com/engine/install/), and find the option that better fits your server configuration.
-
-***
-
-**NOTE:**
-
-In order to run the SSV Node, in a server, only Docker engine is necessary, you can still go ahead and install Docker Desktop, but it will not be necessary unless you plan to use the Graphical Interface.
-
-</details>
-
-<details>
-
-<summary>Golang (optional)</summary>
-
-If you choose to build the project from source, you will need to have Go programming language binaries installed.
-
-For more information, you can refer to the [official Go installation instruction](https://go.dev/doc/install).
-
-</details>
-
-Once you're connected and have the command line opened, the next steps describe how to configure and run the SSV Node to create keys and start your SSV Node. If you run into some issues while running the node, try and [take a look at the troubleshooting page](/operators/operator-node/maintenance/troubleshooting).
+- You will need to be able to connect to your server to run the commands (e.g. via SSH).
+- If you choose to use Docker to launch the SSV Node, have [Docker installed on the machine](https://docs.docker.com/engine/install/) hosting the SSV Node. 
+- If you choose to build the project from source, you will need to have [Go programming language binaries installed](https://go.dev/doc/install).
 
 ### Generate Operator Keys (Encrypted)
 

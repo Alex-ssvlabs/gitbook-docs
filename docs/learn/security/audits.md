@@ -1,17 +1,9 @@
 ---
-sidebar_label: 'Security'
-sidebar_position: 9
+sidebar_label: 'Audit Resources'
+sidebar_position: 2
 ---
 
-# Security
-
-## Bug Bounty Program
-
-Responsible disclosure of security vulnerabilities is rewarded through our [Immunefi](https://immunefi.com/bounty/ssvnetwork/) bug bounty program. The program is focused on [the protocol's smart contracts](https://github.com/ssvlabs/ssv-network), with rewards ranging from $1,500 up to $1,000,000.
-
-Follow the link for more details: [https://immunefi.com/bounty/ssvnetwork/](https://immunefi.com/bounty/ssvnetwork/)
-
-## Audit Resources
+# Audit Resources
 
 The ssv.network has undergone multiple audits, you can find the completed audit review reports at the links below:
 

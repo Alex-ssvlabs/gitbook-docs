@@ -63,4 +63,4 @@ ceremony-[timestamp]
 - Operator signs the proof with their private key and the proof itself has their public key which can be used to verify the signature.
 
 ### Keyshares
-Keyshares file structure can be found [on this separate page](/developers/keyshares-structure.md).
+Keyshares file structure can be found [on this separate page](/learn/security/keyshares-structure.md).

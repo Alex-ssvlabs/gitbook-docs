@@ -22,7 +22,7 @@ Input:
 
 | Input parameter | Input type | Description | Example input |
 |----------------|------------|-------------|---------------|
-| keyshares | KeySharesItem[] \| KeySharesPayload[] | Keyshare or transaction payload | See [keyshares structure page](/developers/keyshares-structure)|
+| keyshares | KeySharesItem[] \| KeySharesPayload[] | Keyshare or transaction payload | See [keyshares structure page](/learn/security/keyshares-structure)|
 | depositAmount | bigint | Amount of SSV to deposit to cluster | 4 |
 
 Example:

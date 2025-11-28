@@ -1,31 +1,20 @@
 ---
-description: Security
-sidebar_position: 8
+description: Key Splitting
+sidebar_position: 1
 ---
 
-# Security
-## Introduction
-Within Distributed Validator Technology (DVT), validators are operated in clusters of independent operators. Each operator holds a key share rather than the full validator key. For each validator duty, the cluster reaches consensus on what to sign and then a threshold of operators produces partial signatures that are aggregated into a valid BLS signature; the validator’s private key is never reconstructed at any point. 
-### How it works
-- The validator’s private key is split into ***n* key shares** using [Shamir Secret Sharing](/learn/introduction/tech-overview) (SSS) with a chosen threshold *t* (e.g., 3-of-4, 5-of-7).
-- Each share is encrypted to the corresponding operator’s public key. So only that operator can recover its own share, because only the operator's private key can decrypt it.
-- The resulting output contains the encrypted key shares along with the metadata required for registration on the SSV network.
-### Security properties
-- **Fault tolerance and uptime:** As long as ***t* of *n*** operators are online and honest, the validator continues to perform duties. A common safety rule is ***n* ≥ 3f + 1**, meaning 7 operators can tolerate 2 faults (→ 5-of-7 threshold).
-- **No single point of failure:** No operator has access to the full key. Compromising fewer than *t* shares is useless.
-- **Active-active redundancy without slashing:** Multiple diverse operators can co-operate on the same validator safely. Unlike naive failover, DVT’s threshold-signature flow avoids double-signing.
-:::note DISCLAIMER
-SSV is non-custodial and only uses the validator's validation key, and **never its withdrawal key**. When a “Private key” or “Validator key” is mentioned - it references Validation key specifically.
-:::
+# Key Splitting
+
+This page describes the security aspect of Key Splitting procedure. The focus is on the exploring functions presented in `ssv-keys` library of [the SSV-SDK](https://github.com/ssvlabs/ssv-sdk), that is used to split the validator keys.
 
 ## Flow Overview
 **%INSERT_DIAGRAM_HERE%**
 
 The whole flow can be described in 4 steps:
-- Prepare `keystore-m` files and their respective password(s).
-- Split the keys into `keyshares-*.json` (the payload ready for registration).
-- Register the key shares to SSV Network via a Smart Contract interaction.
-- SSV Nodes fetch registration events and start performing duties for a new validator as a cluster.
+1. Prepare `keystore-m` files and their respective password(s).
+2. Split the keys into `keyshares-*.json` (the payload ready for registration).
+3. Register the key shares to SSV Network via a Smart Contract interaction.
+4. SSV Nodes fetch registration events and start performing duties for a new validator as a cluster.
 
 ### Security
 A couple of important points to understand about the security of the key splitting procedure:
@@ -53,7 +42,6 @@ We’ll review 4 functions and 1 class that are the most important for this proc
 - **Keystore decryption** (`extractKeys`) - The validator keystore is read from disk and decrypted in memory using the provided password, via the `EthereumKeyStore` class [defined here](https://github.com/ssvlabs/ssv-sdk/blob/498b2611739354ed8e92aff51da44e5b0b3d4146/src/libs/ssv-keys/EthereumKeyStore/EthereumKeyStore.ts#L54). 
 - Both the keystore data and password only exist in RAM during execution. The validator’s private key is never written to disk or transmitted externally.
 - BLS imported from [`bls-eth-wasm`](https://www.npmjs.com/package/bls-eth-wasm), it is used to deserialize the private key.
-- ``
 
 ```typescript
 import bls from 'bls-eth-wasm';
@@ -104,7 +92,7 @@ async encryptShares(operators: IOperator[], shares: IShares[]): Promise<IEncrypt
 
 ### [`Threshold`](https://github.com/ssvlabs/ssv-sdk/blob/498b2611739354ed8e92aff51da44e5b0b3d4146/src/libs/ssv-keys/Threshold/Threshold.ts#L29)
 - Is called within the  `buildShares` function.
-- With this class, the actual shares are created with [Shamir Secret Sharing](/learn/introduction/tech-overview), according to the threshold defined by protocol fault tolerance, and put into an array.
+- With this class, the actual shares are created with [Shamir Secret Sharing](/learn/tech-overview), according to the threshold defined by protocol fault tolerance, and put into an array.
 ```typescript
 class Threshold {
   async create(privateKeyString: string, operatorIds: number[]): Promise<ISharesKeyPairs> {
@@ -211,6 +199,9 @@ private async processFile(
   return keySharesItem;
 }
 ```
+
+## Keyshares Structure
+The detailed explanation of the payload or `keyshares.json` is pressented on [this separate page](/learn/security/keyshares-structure.md).
 
 ## Key Splitting Instructions
 You can follow the step-by-step instructions in the [**Validator Onboarding section**](/stakers/validator-onboarding/).

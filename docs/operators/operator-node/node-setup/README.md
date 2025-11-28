@@ -33,84 +33,16 @@ Make sure to check out [Node hardware specs and requirements](./hardware-require
 
 ## Pre-requisites
 
-#### 1. Enable SSH
-
-You will need to be able to connect to your server:
-
-<details>
-
-<summary>SSH into a local machine</summary>
-
-Please refer to this guide from EthStaker community:
-
-[https://docs.ethstaker.cc/ethstaker-knowledge-base/tutorials/connect-via-ssh](https://docs.ethstaker.cc/ethstaker-knowledge-base/tutorials/connect-via-ssh)
-
-</details>
-
-<details>
-
-<summary>SSH into a Cloud server (e.g. AWS)</summary>
-
-If you have generated an SSH key for your server or downloaded one from your Cloud hosting provider (e.g. AWS)
-
-**Linux / Unix / MacOS**
-
-```
-cd ./{path to the folder to which the key pair file was downloaded}
-
-chmod 400 {key pair file name}
-
-ssh -i {key pair file name} ubuntu@{instance public IP you took from AWS}
-
-```
-
-**Windows**
-
-```
-cd /{path to the folder to which the key pair file was downloaded}
-
-ssh -i {key pair file name} ubuntu@{instance public IP you took from AWS}
-```
-
-</details>
+#### 1. Connect to server
+You will need to be able to connect to your server. For example, by [using SSH](https://docs.ethstaker.cc/ethstaker-knowledge-base/tutorials/connect-via-ssh).
 
 #### 2. Install Docker
 
-<details>
-
-<summary>Docker</summary>
-
 In order to do so, please refer to [the official Docker documentation](https://docs.docker.com/engine/install/), and find the option that better fits your server configuration.
-
-***
-
-Docker needs `sudo`, which can be annoying to type every time. You can give Docker the needed permissions once and for all, if you wish [https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
-
-***
-
-**NOTE:**
-
-In order to run the SSV Node, in a server, only Docker engine is necessary, you can still go ahead and install Docker Desktop, but it will not be necessary unless you plan to use the Graphical Interface.
-
-</details>
 
 #### 3. Install Git
 
-<details>
-
-<summary>Git</summary>
-
-To install the latest stable version for your release of Debian/Ubuntu run `apt-get install git` in your command line.&#x20;
-
-If your machine is using another Linux distribution, please use the [official Git documentation](https://git-scm.com/downloads/linux), and find the option that better fits your server configuration.
-
-***
-
-**NOTE:**
-
-Git is needed to download the SSV Node stack on your machine.
-
-</details>
+To install the latest stable version please use the [official Git documentation](https://git-scm.com/downloads/linux), and find the option that better fits your server configuration.
 
 #### 4. Adjust Firewall
 

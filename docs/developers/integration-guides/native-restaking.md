@@ -24,7 +24,7 @@ The smart contract address you will get at the end of the process will be respon
 
 Native Restaking is the process of pointing an Ethereum validator's [withdrawal credentials](https://notes.ethereum.org/@launchpad/withdrawals-faq#Q-What-are-withdrawals) to the user's [EigenPod](https://docs.eigenlayer.xyz/eigenlayer/restaking-guides/restaking-user-guide/native-restaking/create-eigenpod/). So in order to do that, you need to create a new validator.
 
-You can do that using [this guide in our documentation](/stakers/validator-management/creating-a-new-validator), but the most important thing is to set the validator's withdrawal credentials to the EigenPod. So when [generating the validator keys](/stakers/validator-management/creating-a-new-validator#generate-validator-keys) using this command:
+You can do that using [this guide in our documentation](/stakers/solo-stakers/creating-a-new-validator), but the most important thing is to set the validator's withdrawal credentials to the EigenPod. So when [generating the validator keys](/stakers/solo-stakers/creating-a-new-validator#vanilla-key-generation) using this command:
 
 ```bash
 ./deposit new-mnemonic --num_validators 1  --chain mainnet  --eth1_withdrawal_address [YOUR_EIGENPOD_ADDRESS]
@@ -52,5 +52,5 @@ Follow [this guide in our documentation to register the new validator](/stakers/
 :::info
 It is important to **NOT** direct execution rewards (`suggested_fee_recipient`) to the EigenPod as these funds would be irretrievable.
 
-For more information on this topic, please refer to [the dedicated learning page](/learn/validators/network-overview/validator-rewards).
+For more information on this topic, please refer to [the dedicated learning page](/learn/network-overview/validators/validator-rewards).
 :::

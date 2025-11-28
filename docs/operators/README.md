@@ -13,7 +13,7 @@ Operators determine their own fees and are compensated for their integral servic
 
 ## How to participate in SSV
 
-- Learn [how Operator Fees work](/operators/operator-onboarding/) and [how they are updated](/operators/operator-onboarding/update-fee).
+- Learn [how Operator Fees work and how they are updated](/learn/network-overview/operators/update-fee).
 
 - [Set up an SSV Node](/operators/operator-node/node-setup/README.md) and [Register a new Operator on the network](/operators/operator-management/registration.md).
 

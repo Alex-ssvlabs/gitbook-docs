@@ -1,9 +1,15 @@
 ---
 sidebar_label: 'Keyshares file structure'
-sidebar_position: 8
+sidebar_position: 4
 ---
 
 # Keyshares file structure
+
+Using [Distributed Key Generation](/learn/tech-overview#distributed-key-generation), the SSV protocol encrypts and splits a validator key into multiple “KeyShares”. The KeyShares are then distributed to multiple non-trusting nodes, run by operators.
+
+Since each element is encrypted, no one can temper with the file. For example, if anyone would change `ownerAddress` or `ownerNonce` and try to submit such file to the ssv network - the KeyShares would be deemed as invalid and ignored by network participants. That is because the signature and the contents of the file are not matching.
+
+Find more details about each element of keyshares structure below.
 
 ### An example of `keyshares.json` structure:
 ```json

@@ -15,9 +15,9 @@ import TabItem from '@theme/TabItem';
 :::
 
 **Choose one** of the options, based on how your validator(s) were generated and which files you have:
-- [**Validators with Keystore**](#1-validators-with-keystore) — follow if you have the `keystore.....json` file of your validator.
-- [**DKG-generated Validators**](#2-dkg-generated-validators) — follow if you have the `ceremony-YYYY-MM-DD...` folder with `keyshares` and `proofs` for your validators.
-- [**I don't have neither**](#3-i-dont-have-neither)
+- [**Validators with Keystore**](#validators-with-keystore) — follow if you have the `keystore.....json` file of your validator.
+- [**DKG-generated Validators**](#dkg-generated-validators) — follow if you have the `ceremony-YYYY-MM-DD...` folder with `keyshares` and `proofs` for your validators.
+- [**I don't have neither**](#i-dont-have-neither)
 
 ## **Validators with Keystore**
 If you have multiple keystore files, you can verify them by checking its contents. Near the ending of file you will see `"pubkey"` with public key of the validator. It can be tricky to read JSON file, you can use tools like online JSON formatter or offline Code editors (e.g. VS Code).
@@ -99,7 +99,7 @@ You will be shown your newly created cluster with updated set of operators. You 
   <img src="/img/reshare-guide-9.png" alt="" />
 </div>
 
-Please note if you click on `Back` your page *might not* load properly. In that case, you can continue by following the [DKG validator onboarding guide](/stakers/solo-stakers/dkg-ceremony#existing-accounts).
+Please note if you click on `Back` your page *might not* load properly. In that case, you can continue by following the [validator onboarding guide](/stakers/solo-stakers/distributing-a-validator).
 
   </TabItem>
   <TabItem value="checklist" label="Checklist">

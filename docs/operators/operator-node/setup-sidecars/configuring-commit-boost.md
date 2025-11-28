@@ -1,5 +1,5 @@
 ---
-title: Configuring Commit-Boost
+title: Configure Commit-Boost
 sidebar_position: 4
 ---
 
