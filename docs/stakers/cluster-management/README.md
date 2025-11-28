@@ -1,15 +1,18 @@
 ---
-description: Cluster Management
-sidebar_position: 5
+description: Management
+sidebar_position: 4
 ---
 
-# Cluster Management
+# Management
+This section explains the actions that can be performed with an existing cluster:
 
-**Follow the guides in this section:**
-- [**Add validator**](./adding-validator-to-existing-cluster.md) to existing cluster
-- [**Deposit SSV**](./depositing-ssv.md) to cluster's balance
-- [**Withdraw SSV**](./withdrawing-ssv.md) from cluster's balance
-- [**Re-activate a cluster**](./re-activating-a-cluster.md) if your SSV balance went to 0
-- [**Update operators**](./update-operators.md) when you need to change one of the operators
-- [**Exit a validator**](./exiting-a-validator.md)
-- [**Remove a validator**](./removing-a-validator.md)
+- [Adding More Validators](./adding-validator-to-existing-cluster.md)
+- [Consolidate Validators](./consolidate-validators.md)
+- [Depositing SSV](./depositing-ssv.md)
+- [Reactivation](./re-activating-a-cluster.md)
+- [Setting Fee Recepient](./setting-fee-recipient-address.md)
+- [Update Operator Set](./update-operators.md)
+
+:::note Automations
+Most of these steps can be automated programmatically. If you wish to do so, please check out [Developers Tutorials page](/developers/examples/).
+:::

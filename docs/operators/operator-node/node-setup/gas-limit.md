@@ -4,7 +4,7 @@ title: Gas Limit
 
 # Gas Limit Change
 
-The default gas limit is 30M and SSV makes it configurable as long as the operator committees converge on the same value.
+The default gas limit is 36M and SSV makes it configurable as long as the operator committees converge on the same value.
 
 :::danger Attention
 All operators in the committee **MUST** set the same gas limit. Otherwise, MEV registrations would fail. The validators would eventually not propose MEV blocks and instead fall back to vanilla blocks (non-MEV blocks built locally).

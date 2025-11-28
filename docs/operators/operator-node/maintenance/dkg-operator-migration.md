@@ -3,29 +3,32 @@ title: DKG Operator Migration
 sidebar_position: 4
 ---
 
-If you need to migrate the DKG operator node to a different machine, you need to know what operations must be performed, in which order, and what are the sensitive pieces of data that need to be preserved and copied over to the new hardware.
+If you need to migrate the DKG operator node to a different machine, follow the procedure described below.
 
 ### Procedure
 
-In order to migrate the DKG operator node to a different machine, it is advised to shut down the current setup, before launching the new one.
+It is advised to shut down the current setup, before launching the new one.
 
-The recommended migration process could be summarised in the following steps:
+The recommended migration process summary:
 
-* Backup DKG files (if applicable)
-* Shut down DKG operator (if applicable) on the current machine
-* [Start DKG operator on the new machine](/operators/operator-node/setup-sidecars/enabling-dkg/start-dkg-node/)
-* [Update operator metadata on the SSV WebApp](/operators/operator-node/setup-sidecars/enabling-dkg/final-steps#update-operator-metadata)
+1. [Backup DKG files](#dkg-backup)
+2. Copy the files to the new machines
+3. On the current machine, shut down DKG operator
+4. On the new machine, [start DKG operator](/operators/operator-node/setup-sidecars/enabling-dkg/start-dkg-node/)
+5. [Update operator metadata on the SSV WebApp](/operators/operator-node/setup-sidecars/enabling-dkg/final-steps#update-operator-metadata)
 
-:::info
-Please note: since the DKG node does not have to be on the same machine as the SSV node, one can be migrated without having to migrate the other.
+:::info Please note
+DKG node does *not* have to be on the same machine as the SSV node. One can be migrated without having to migrate the other.
 :::
 
-### DKG backup (if necessary)
+### DKG backup
 
-If you have followed [the dedicated guide to enable DKG for your operator](/operators/operator-node/setup-sidecars/enabling-dkg/start-dkg-node/), you most likely have (at least) these files in the folder with your node configuration:
+You most likely have (at least) the files below, if you have followed [the dedicated guide to enable DKG for your operator](/operators/operator-node/setup-sidecars/enabling-dkg/start-dkg-node/).
+
+Usually, the folder with your node configuration will look as follows:
 
 ```
-⇒   tree
+⇒   tree .
 .
 ├── config.yaml
 ├── debug.log
@@ -40,15 +43,20 @@ If you have followed [the dedicated guide to enable DKG for your operator](/oper
 └── password
 ```
 
-#### Configuration file
-
-The configuration file (`config.yaml` in the code snippet above), is necessary for the DKG operator to work. You can copy the old configuration file and use it as a template, making sure to change any parameter that needs changing, such as paths to the Operator Keys.
+**What you need to copy over to the new machine:**
+- [Operator keys](#operator-keys) - strictly required.
+- [Configuration file](#configuration-file) - neccessary, useful.
+- [Ouput folder](#output-folder-optional) - optional.
 
 #### Operator keys
 
 Similarly to the SSV Node, Operator keys are a vital requirement to run the DKG operator server, as they the link that connects it to the SSV node itself.
 
-The files in question are `encrypted_private_key.json` and `password` in the snippet above and the filenames should be the same for you.
+The files are `encrypted_private_key.json` and `password` in the snippet above, and the filenames should be the same for you.
+
+#### Configuration file
+
+The configuration file (`config.yaml` in the code snippet above), is necessary for the DKG operator to work. You can copy the old configuration file and use it as a template, making sure to change any parameter that needs changing, such as paths to the Operator Keys.
 
 #### Output folder (optional)
 

@@ -1,42 +1,56 @@
 ---
-title: Re-activating a cluster
+title: Reactivate a Cluster
 sidebar_position: 4
 ---
 
-### Connect your Web3 wallet to the WebApp
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-Make sure to connect your Web3 wallet with the WebApp, and that the address corresponds with the one you want to manage your Validators with.
+# Reactivate a Cluster
 
-:::info
-**Note:** Your account is associated with your Web3 wallet.
-:::
+Make sure to connect your Web3 address/wallet with the WebApp. Use the address you registered your validators with.
 
-In the My Account page, select a _Liquidated cluster_ that needs to be reactivated.
+<Tabs>
+  <TabItem value="detailed-guide" label="Detailed Guide">
+
+1. [**In the Clusters page**](https://app.ssv.network/clusters), select the **Liquidated cluster** that needs to be reactivated.
 
 ![reactivate-cluster](/img/reactivate-a-cluster-1.avif)
 
-In the Cluster page, click on the **Reactivate Cluster** button
+2. Click on the **Reactivate Cluster** button.
 
 ![reactivate-cluster](/img/reactivate-a-cluster-2.avif)
 
-In the next screen, you'll be asked to choose the cluster runway, which will impact the amount of SSV you will have to deposit to reactivate the cluster.
+3. In the next screen, you'll be asked to **choose the cluster runway**, which will impact the amount of SSV you will have to deposit to reactivate the cluster. Once you select the runway, click on the "Next" button.
 
 ![reactivate-cluster](/img/reactivate-a-cluster-3.avif)
 
-Once you select the runway, click on the _Next_ button. The page will attempt to submit a transaction to the SSV Network smart contract, check your Web3 wallet.
-
-![reactivate-cluster](/img/reactivate-a-cluster-4.avif)
-
-Now, finalize the validator reactivation by signing the transaction.
+4.  The page will attempt to **submit a transaction to the SSV Network** smart contract, check your Web3 wallet.
 
 <div style={{ display: 'flex', justifyContent: 'center' }}>
   <img 
     src="/img/reactivate-a-cluster-5.png" 
     alt="Reactivate a cluster" 
-    style={{ width: '50%', maxWidth: '500px' }}
+    style={{ width: '30%', maxWidth: '500px' }}
   />
 </div>
 
-You'll be taken back to the Cluster page, where the balance will be updated with the amount of SSV tokens deposited.
+5. **Finalize the cluster reactivation by signing the transaction**.
 
-![reactivate-cluster](/img/reactivate-a-cluster-6.avif)
+  </TabItem>
+  <TabItem value="checklist" label="Checklist">
+
+1. [**In the Clusters page**](https://app.ssv.network/clusters), select the **Liquidated cluster** that needs to be reactivated.
+
+2. Click on the **Reactivate Cluster** button.
+
+3. In the next screen, you'll be asked to **choose the cluster runway**, which will impact the amount of SSV you will have to deposit to reactivate the cluster. Once you select the runway, click on the "Next" button.
+
+4.  The page will attempt to **submit a transaction to the SSV Network** smart contract, check your Web3 wallet.
+
+5. **Finalize the cluster reactivation by signing the transaction**.
+
+  </TabItem>
+</Tabs>
+
+You'll be taken back to the Cluster page, where the balance will be updated with the amount of SSV tokens deposited.

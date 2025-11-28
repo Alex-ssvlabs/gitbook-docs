@@ -1,17 +1,13 @@
 ---
-title: Withdrawing earnings
+title: Withdraw Earnings
 sidebar_position: 4
 ---
 
-### Connect your Web3 wallet to WebApp.
-
-Make sure to connect your Web3 wallet with the WebApp, and that the address corresponds with the one you want to manage your Operators with.
-
-:::info
-**Note:** Your account is associated with your Web3 wallet.
+:::info Owner Address
+**Note:** You need to use the same Web3 address that you registered operator(s) with.
 :::
 
-Once connected, browse to the _My Account_ page and select the Operator you want to update from the _Operator Dashboard_.
+[**Open the Web App**](https://app.ssv.network/operators) and select the Operator you want to update from the _Operator Dashboard_.
 
 ![withdraw](/img/withdraw-earnings-1.avif)
 

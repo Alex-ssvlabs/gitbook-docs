@@ -3,42 +3,40 @@ title: Node Migration
 sidebar_position: 3
 ---
 
-As a node operator, it may happen that the software stack needs to be migrated to a different machine, for various reasons.
-
-In such a scenario, it is very important to know what operations must be performed, in which order, and what are the sensitive pieces of data that need to be preserved and copied over to the new hardware. Here is a summary:
+As a node operator, it may happen that the software stack needs to be migrated to a different machine, for various reasons. In such case, please follow the steps below closely.
 
 ## Procedure
 
-In order to migrate the SSV Node to a different machine, it is necessary to shut down the current setup, **before** launching the new one.
-
-:::danger
+:::danger Slashing warning
 Two nodes with the same public key should never be running at the same time. The protocol is resilient to slashing, but ignoring this warning could lead to unexpected behaviours.
 :::
 
-So, for this reason, the migration process could be easily summarised in the following steps:
+The migration process is summarised in the following steps:
 
-1. Backup node files
+1. [Backup node files](#node-backup) - *described in this guide below*
 2. Shut down SSV Node on the current machine
 3. Setup SSV Node on the new machine using backups
 4. Wait at least one epoch
 5. Start SSV Node service on the new machine
 
-:::warning
-Please note: if you are also running a DKG operator node, you may have to [follow the DKG operator migration guide](./dkg-operator-migration), if it is running on the same machine as the SSV node, or if it is running on a different machine, but you need to decommission that machine as well.
+:::note DKG Migration
+If you are also running a DKG operator node, you may have to [*follow the DKG operator migration guide*](./dkg-operator-migration), if it is running on the same machine as the SSV node, or if it is running on a different machine, but you need to decommission that machine as well.
 :::
 
 ## Node backup
 
 ### SSV Stack setup
 
-If you have followed the [automatic node setup with SSV Stack](../node-setup), your files should be in `/ssv-stack/ssv-node-data` directory.
+If you have followed the [automatic node setup with SSV Stack](../node-setup), your files should be in `/ssv-stack/ssv-node-data` directory. Copy to a new machine all contents from this directory. That is enough for a successful migration. 
+
+Note that you can also [migrate the database](#node-database-optional) contained in `db`. That can save you time on syncing the new database.
 
 ### Manual Node setup
 
 If you have followed [the Manual Node setup guide](../node-setup/manual-setup), you most likely have (at least) these files in the folder with your node configuration:
 
 ```
-⇒   tree
+⇒   tree .
 .
 ├── config.yaml
 ├── data

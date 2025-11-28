@@ -1,5 +1,5 @@
 ---
-title: Configuring Primev
+title: Configure Primev
 sidebar_position: 3
 ---
 

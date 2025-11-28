@@ -80,8 +80,8 @@ const config: Config = {
       },
       items: [
         {to: '/learn/introduction', label: 'Learn', position: 'left'},
-        {to: '/developers/', label: 'Developers', position: 'left'},
         {to: '/stakers/', label: 'Stakers', position: 'left'},
+        {to: '/developers/', label: 'Developers', position: 'left'},
         {to: '/operators/', label: 'Operators', position: 'left'},
         {
           href: 'https://github.com/ssvlabs',

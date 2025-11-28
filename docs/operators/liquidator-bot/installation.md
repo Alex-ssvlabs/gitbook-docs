@@ -80,5 +80,5 @@ yarn cli \
 --max-visible-blocks=5000
 ```
 
-The smart contract addresses were taken [from this page](../../developers/smart-contracts/#holesky-testnet), in this instance.
+The smart contract addresses were taken [from this page](/developers/testnet), in this instance.
 :::
